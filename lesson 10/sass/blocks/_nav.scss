@@ -1,0 +1,40 @@
+.first{
+    background-color: #8F0365;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav_a{
+        color: #bdbdbd;
+    }
+    &__nav_language{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 46px;
+    }
+    &__nav_sites{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 62px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .first__nav{
+        padding: 0 20px;
+    }
+    .google{
+        display: none;
+    }
+    .painterst{
+        display:none;
+    }
+}
+@media only screen and (max-width:840px) {
+    .first{
+        display: none;
+    }
+}
